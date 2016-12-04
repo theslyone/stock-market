@@ -22,7 +22,7 @@ module.exports = {
         'public/lib/angular-file-upload/angular-file-upload.js',
         'public/lib/owasp-password-strength-test/owasp-password-strength-test.js',
 
-        'http://code.highcharts.com/stock/highstock.src.js',
+        'https://code.highcharts.com/stock/highstock.src.js',
         'public/lib/highcharts-ng/dist/highcharts-ng.js',
         'public/lib/semantic-ui-angular-jquery/src/sm-core.js',
         'public/lib/semantic-ui-angular-jquery/src/search/sm-search.js',
