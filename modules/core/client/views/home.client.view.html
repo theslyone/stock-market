@@ -1,0 +1,37 @@
+<section ng-controller="MarketController">
+  <section class="ui vertically padded main container">
+    <div class="ui segments">
+      <div class="ui fluid segment">
+        <div class="ui mini form">
+          <div class="two fields">
+            <div class="field">
+              <sm-search class="right floated" model="symbol" remote="{{remoteSearch}}" placeholder="Symbol..." icon="search"></sm-search>
+            </div>
+            <div class="field">
+                <button ng-click="watchStock()" class="ui green mini button"><i class="plus icon"></i>Watch</button>
+            </div>
+          </div>
+        </div>
+      <div class="ui red segment">
+        <div class="ui stackable two column grid">
+          <div class="twelve wide column">
+            <highchart id="highStockChart" config="highstockChatConfig"></highchart>
+          </div>
+          <div class="four wide column">
+            <h3 class="ui dividing header">Stock Watch List</h3>
+            <!--<sm-list class="relaxed divided stock" items="stocks" description="item.symbol"
+              icon="'large github middle aligned'" header="item.name" header-href="'https://github.com/' + item.h">
+            </sm-list>-->
+            <div class="stock ui list">
+              <div class="stock item" ng-repeat="stock in stocks">
+                <strong><p ng-bind="stock.name"></p></strong>
+                <p><em ng-bind="stock.symbol"></em></p>
+                <span class="remove stock" ng-click="removeStock(stock)">X</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

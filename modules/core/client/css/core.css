@@ -1,0 +1,87 @@
+.undecorated-link:hover {
+  text-decoration: none;
+}
+[ng\:cloak],
+[ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+
+.open .header-profile-image,
+a:hover .header-profile-image {
+  opacity: 1;
+}
+.user-header-dropdown-toggle {
+  padding-top: 11px !important;
+  padding-bottom: 11px !important;
+}
+.error-text {
+  display: none;
+}
+.has-error .help-block.error-text {
+  display: block;
+}
+.has-error .help-inline.error-text {
+  display: inline;
+}
+
+
+
+.banner {
+  background: #0E1619 url(../img/brand/banner-img.jpg) no-repeat scroll 50% 25%/ cover;
+}
+
+/*Top Navigation*/
+header {
+  width: 100%;
+  height: 70px;
+  background-color:rgb(0, 0, 0);
+}
+
+header img.logo {
+  display: inline-block;
+  height: 60px;
+  line-height: 70px;
+  padding: 5px 0 5px 0;
+}
+
+.main.container {
+  background-color: #fff;
+  color: #000 !important;
+}
+
+.vertically.padded{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.very.vertically.padded{
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+.stock.ui.list{
+    list-style: none;
+    list-style-type: none;
+}
+
+.stock.ui.list .item{
+  position: relative;
+  border-bottom: 1px solid #000;
+  padding: 10px;
+}
+
+.stock.ui.list .item:hover{
+  background-color: #F00;
+  color: #fff;
+}
+
+.stock.ui.list .item .remove{
+  position: absolute;;
+  right: 5px;
+  top: 2px;
+  text-align: right;
+  cursor: pointer;
+}
